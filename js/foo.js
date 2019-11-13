@@ -1,1 +1,1 @@
-// totemo sugoi js desu.
+// totemo sugoi javascript desu.
