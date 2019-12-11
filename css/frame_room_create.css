@@ -1,0 +1,24 @@
+.flex_test-box {
+	background-color: #eee;     /* 背景色指定 */
+	padding:  10px;             /* 余白指定 */
+	display: flex;     /*横並びにする*/
+}
+
+.flex_test-item {
+	padding: 10px;
+	color:  rgb(84, 84, 84);               /* 文字色 */
+	margin:  10px;              /* 外側の余白 */
+	border-radius:  5px;        /* 角丸指定 */
+}
+
+.flex_test-item:nth-child(1) {
+	background-color:  rgb(255, 255, 255); /* 背景色指定 */
+	text-align: center;
+	width: 400px;
+}
+
+.flex_test-item:nth-child(2) {
+	background-color:  rgb(255, 255, 255); /* 背景色指定 */
+	width: 900px;
+	text-align: center;
+}
