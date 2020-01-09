@@ -1,37 +1,34 @@
 
-  
-  header {
-    background: #EEEEEE;
-    font-size:180%;
-    width:200px;
-  }
-  
-  #column1 {
-    background: #EEEEEE;
-    float: left;
-    width: 350px;
-  }
-   
- 
-  
-
-footer {
-  clear: both;
-  background: rgb(255, 255, 255);
+.flex_test-box {
+	background-color: #eee;     /* 背景色指定 */
+	padding:  10px;             /* 余白指定 */
+	display: flex;     /*横並びにする*/
 }
 
-html, body {
-	height: 100%;
-	background: rgb(255, 255, 255);
-  }
-  body {
-	margin: 0;
-	padding: 30px;
-  }
-  * {
-	box-sizing: border-box;
-  }
-  .tab-wrap {
+.flex_test-item {
+	padding: 10px;
+	color:  rgb(84, 84, 84);               /* 文字色 */
+	margin:  10px;              /* 外側の余白 */
+	border-radius:  5px;        /* 角丸指定 */
+}
+
+.flex_test-item:nth-child(1) {
+	background-color:  rgb(255, 255, 255); /* 背景色指定 */
+	text-align: center;
+	width: 400px;
+	height:630px;
+}
+
+.flex_test-item:nth-child(2) {
+	background-color:  rgb(255, 255, 255); /* 背景色指定 */
+	width: 1000px;
+	height:630px;
+	text-align: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.tab-wrap {
 	height: 100%;
 	min-height: 600px;
 	display: flex;
@@ -40,10 +37,9 @@ html, body {
   }
   .tab-label {
 	width: 60px;
-	height:30px;
+	height:25px;
 	color: White;
-	background: rgb(189, 189, 189);
-	font-weight: bold;
+	background-color: #44546A;
 	white-space: nowrap;
 	text-align: center;
 	border:1px solid Gray;
@@ -61,8 +57,8 @@ html, body {
   }
   /* アクティブなタブ */
   .tab-switch:checked+.tab-label {
-	color: Gray;
-	background: White;
+	color: rgb(255, 255, 255);
+	background: #565656;;
 	border-right-color: White;
   }
   .tab-switch:checked+.tab-label+.tab-content {
@@ -87,7 +83,7 @@ html, body {
 	height:90px;
 	background:#d18005;
 	}
-	
+
 	th,td {
 		border: solid 1px; 
 		color: rgb(115, 115, 115);
@@ -101,36 +97,4 @@ html, body {
 		
 		width:  60px;              /* 幅指定 */
 		height: 30px;               /* 高さ指定 */
-	}
-
-	#modal-content {
-		width: 50% ;
-		margin: 0 ;
-		padding: 10px 20px ;
-		border: 2px solid #aaa ;
-		background: #fff ;
-		position: fixed ;
-		display: none ;
-		z-index: 2 ;
-	}
-		
-	#modal-overlay {
-		z-index: 1 ;
-		display: none ;
-		position: fixed ;
-		top: 0 ;
-		left: 0 ;
-		width: 100% ;
-		height: 120% ;
-		background-color: rgba( 0,0,0, 0.75 ) ;
-	}
-	
-	.button-link {
-		color: #00f ;
-		text-decoration: underline ;
-	}
-	 
-	.button-link:hover {
-		cursor: pointer ;
-		color: #f00 ;
 	}
