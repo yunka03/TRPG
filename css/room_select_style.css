@@ -176,7 +176,7 @@ body {
 	top: 3px;
 }
 .botton3{
-	width:200px;
+	width:50px;
 	height:32px;
 	border-radius: 25px;
 	background-color:  #44546A;
@@ -195,7 +195,7 @@ body {
 	cursor: pointer;
 }
 .botton4{
-	width:200px;
+	width:50px;
 	height:32px;
 	border-radius: 25px;
 	background-color:  #44546A;
@@ -245,6 +245,122 @@ body {
 	background:  #e9e9e9;
 	outline:none;
 
+}
+.text4{
+	width:100px;
+	height:25px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+
+}
+.text5{
+	width:100px;
+	height:25px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+
+}
+.text6{
+	width:250px;
+	height:30px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+}
+.text7{
+	width:250px;
+	height:30px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+}
+.text8{
+	width:250px;
+	height:30px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+}
+.text9{
+	width:250px;
+	height:30px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+}
+/*フォーム*/
+.cp_ipselect {
+	overflow: hidden;
+	width: 90%;
+	margin: 2em auto;
+	text-align: center;
+	
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+	display: none;
+	
+}
+.cp_ipselect.cp_sl04 {
+	position: relative;
+	border-radius: 1px;
+	border: 1px solid #d9d9d9;
+  border-radius: 50px;
+	background: #e9e9e9;
+	
+}
+.cp_ipselect.cp_sl04::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.8em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #44546A;
+	pointer-events: none;
+	
+}
+.cp_ipselect.cp_sl04 select {
+	padding: 8px 38px 8px 8px;
+	color: #44546A;
+	overflow-y: scroll;
+}
 }
 /*ラジオボタン*/
 .cp_ipradio {

@@ -2,16 +2,16 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="../images/oct128.ico">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../js/jquery.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/room_select_style.css">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100&display=swap" rel="stylesheet"> 
-
 <title>無名機構書 | ルーム選択</title>
 </head>
   </head>
   <body>
-    <header>　　　 無名機構書</header>
+    <header>　　無名機構書</header>
     <main>
         <div class="flex_test-box">
             <div class="flex_test-item">
@@ -42,39 +42,54 @@
                                 <div class="flex_test-box">
                                         <div class="flex_test-item">
                                             プレイルーム名<br>
-                                            <input type="text1" name="name1"></p><br>
+                                            <input type="text" name="name4"class="text4"></p><br>
                                             パスワード<br>
                                             (空ならパスワードなし)<br>
-                                            <input type="text2" name="name2"></p><br>
+                                            <input type="text" name="name5"class="text5"></p><br>
                                             ゲームシステム
-                                            <form method="post" action="example.cgi">
-                                    
-                                                <p>
-                                                <select name="example1">
-                                                <option value="サンプル1">選択肢のサンプル1</option>
-                                                <option value="サンプル2">選択肢のサンプル2</option>
-                                                <option value="サンプル3">選択肢のサンプル3</option>
-                                                <option value="サンプル4">選択肢のサンプル4</option>
-                                                <option value="サンプル5">選択肢のサンプル5</option>
-                                                </select>
-                                                </p>
-                                            </form>
+
+                                            <div class="cp_ipselect cp_sl04">
+                                                    <select required>
+                                                            <option value="1">アマデウス</option>
+                                                            <option value="2">アリアンロッド</option>
+                                                            <option value="3">インセイン</option>
+                                                            <option value="4">ウタカゼ</option>
+                                                            <option value="5">キルデスビジネス</option>
+                                                            <option value="6">クトゥルフ　第6版</option>
+                                                            <option value="7">クトゥルフ　第7版</option>
+                                                            <option value="8">ゴルブリンスレイヤーTRPG</option>
+                                                            <option value="">サタスペ</option>
+                                                            <option value="10">ステラナイツ</option>
+                                                            <option value="11">シノビガミ</option>
+                                                            <option value="12">ソード・ワールド2.0</option>
+                                                            <option value="13">ダブルクロスThe 3rd Edition</option>
+                                                            <option value="14">トーキョーN◎VA</to-kyo-></option>
+                                                            <option value="15">ネクロニカ</option>
+                                                            <option value="16">パラノイアTS</option>
+                                                            <option value="17">ビギニングアイドル</option>
+                                                            <option value="18">ピーカーブー</option>
+                                                            <option value="19">マギカロギア</option>
+                                                            <option value="20">モノトーンミュージアム</option>
+                                                            <option value="21">ゆうやけこやけ</option>
+                                                            <option value="2２">りゅうたま</option>
+                                                    </select>
+                                                    </div>
                                             <input type="radio" name="kakutyo" value="male">拡張機能表示<br><br>
-                                            <button type="button" name="name" value="value">送信</button>
+                                            <button type="button" name="button3" value="value" class="botton3">送信</button>
                                     
                                     
                                     
                                         </div>
                                         <div class="flex_test-item">
                                              外部URLの使用<br>
-                                             <input type="radio" name="radio1" value="male">可
+                                             <input type="radio" name="radio1" value="male">可　
                                              <input type="radio" name="radio2" value="male">不可<br><br>
                                              見学の可否<br>
-                                             <input type="radio" name="radio3" value="male">可
+                                             <input type="radio" name="radio3" value="male">可　
                                              <input type="radio" name="radio4" value="male">不可<br><br>
                                             チャットのタブ<br>
                                             (半角・全角スペースで区切ってください)<br>
-                                            <input type="text3" name="name3"></p><br><br>
+                                            <input type="text" name="name6"class="text6"></p><br>
                                             表示設定<br>
                                             <input type="radio" name="radio5" value="male">チャット
                                             <input type="radio" name="radio6" value="male">ダイス
@@ -109,16 +124,16 @@
                         <div class="modal__content">
                                 
                                         <div class="flex_test-item">
-                                            選択ルームNo.<br>
-                                            <input type="text1" name="name1"></p><br>
+                                            <br><br>選択ルームNo.<br>
+                                            <input type="text1" name="name1" class="text7"></p><br>
                                             
                                             プレイルーム名<br>
-                                            <input type="text2" name="name2"></p><br>
+                                            <input type="text2" name="name2" class="text8"></p><br>
                                             パスワード<br>
                                             (空ならパスワードなし)<br>
-                                            <input type="text3" name="name2"></p><br>
+                                            <input type="text3" name="name2" class="text9"></p><br>
                                             <input type="radio" name="kakutyo" value="male">間違いなく削除する<br><br>
-                                            <button type="button" name="name" value="value">削除</button>
+                                            <button type="button" name="botton4" value="value" class ="botton4">削除</button>
                                         
                                     </div>
                             <a class="js-modal-close" href="">閉じる</a>
