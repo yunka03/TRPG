@@ -2,28 +2,131 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="C:\Users\1709017\Desktop\TRPG\trpg-tool\css\room_select_style.css">
-<title>システム名 | ルーム選択</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/room_select_style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100&display=swap" rel="stylesheet"> 
+
+<title>無名機構書 | ルーム選択</title>
 </head>
   </head>
   <body>
-    <header>§ システム名</header><br>
+    <header>　　　 無名機構書</header>
     <main>
         <div class="flex_test-box">
             <div class="flex_test-item">
-                <input type="text"  value="" placeholder=" ルーム検索" name="roomsearch" size="37">
-                <button type='submit' name='botton1' value='add'>検索</button><br><br>
-                <input type="radio" name="q2" value="はい"checked> ルーム名<br>
-                <input type="radio" name="q2" value="いいえ" > ゲームシステム名<br><br>
+                <br>
+                <input type="text"  value="" placeholder=" ルーム検索" name="roomsearch" class="text1" >
+                <input type="submit" value = "" class="botton1">
+                <div class="cp_ipradio">
+                    <input type="radio" name="cpipr03" id="a_rb1" />
+                    <label for="a_rb1">ルーム名</label>
+                    <input type="radio" name="cpipr03" id="a_rb2" />
+                    <label for="a_rb2">ゲームシステム名</label><br><br>
+                </div>
         
                 <p>選択ルームNo.</p>
-                <input type="text"  name="room" size="11"><br>
+                <input type="text"  name="room" class="text2"><br>
                 <p>名前(初回ログイン用)</p>
-                <input type="text"  name="rogin" size="19"><br><br>
-                <button type='submit' name='botton2' value='add'>入室</button><br><br>
+                <input type="text"  name="rogin" class="text3"><br><br>
+                <input type="submit" value = "" class="botton2">入室<br><br>
+
+                
+                <div class="content">
+                        <a class="js-modal-open" href="" data-target="modal01">新規プレイルーム作成</a><br>
+                        <a class="js-modal-open" href="" data-target="modal02">指定プレイルーム削除</a>
+                    </div>
+                    <div id="modal01" class="modal js-modal">
+                        <div class="modal__bg js-modal-close"></div>
+                        <div class="modal__content">
+                                <div class="flex_test-box">
+                                        <div class="flex_test-item">
+                                            プレイルーム名<br>
+                                            <input type="text1" name="name1"></p><br>
+                                            パスワード<br>
+                                            (空ならパスワードなし)<br>
+                                            <input type="text2" name="name2"></p><br>
+                                            ゲームシステム
+                                            <form method="post" action="example.cgi">
+                                    
+                                                <p>
+                                                <select name="example1">
+                                                <option value="サンプル1">選択肢のサンプル1</option>
+                                                <option value="サンプル2">選択肢のサンプル2</option>
+                                                <option value="サンプル3">選択肢のサンプル3</option>
+                                                <option value="サンプル4">選択肢のサンプル4</option>
+                                                <option value="サンプル5">選択肢のサンプル5</option>
+                                                </select>
+                                                </p>
+                                            </form>
+                                            <input type="radio" name="kakutyo" value="male">拡張機能表示<br><br>
+                                            <button type="button" name="name" value="value">送信</button>
+                                    
+                                    
+                                    
+                                        </div>
+                                        <div class="flex_test-item">
+                                             外部URLの使用<br>
+                                             <input type="radio" name="radio1" value="male">可
+                                             <input type="radio" name="radio2" value="male">不可<br><br>
+                                             見学の可否<br>
+                                             <input type="radio" name="radio3" value="male">可
+                                             <input type="radio" name="radio4" value="male">不可<br><br>
+                                            チャットのタブ<br>
+                                            (半角・全角スペースで区切ってください)<br>
+                                            <input type="text3" name="name3"></p><br><br>
+                                            表示設定<br>
+                                            <input type="radio" name="radio5" value="male">チャット
+                                            <input type="radio" name="radio6" value="male">ダイス
+                                            <input type="radio" name="radio7" value="male">イニシアティブ
+                                            <input type="radio" name="radio8" value="male">リソース
+                                            <input type="radio" name="radio9" value="male">立ち絵<br>
+                                    
+                                            <input type="radio" name="radio10" value="male">チャットパレット
+                                            <input type="radio" name="radio11" value="male">カウンターリモコン
+                                            <input type="radio" name="radio12" value="male">カットイン
+                                            <input type="radio" name="radio13" value="male">座標
+                                            <input type="radio" name="radio14" value="male">マス目<br>
+                                    
+                                            <input type="radio" name="radio15" value="male">マス目にキャラクターを合わせる
+                                            <input type="radio" name="radio16" value="male">立ち絵のサイズを自動調節する<br>
+                                    
+                                            <input type="radio" name="radio17" value="male">回転マーカー
+                                            <input type="radio" name="radio18" value="male">カードピックアップウィンドウ
+                                            <input type="radio" name="radio19" value="male">カード操作ログ
+                                    
+                                    
+                                    
+                                    
+                                    
+                                        </div>
+                                    </div>
+                            <a class="js-modal-close" href="">閉じる</a>
+                        </div><!--modal__inner-->
+                    </div><!--modal-->
+                    <div id="modal02" class="modal js-modal">
+                        <div class="modal__bg js-modal-close"></div>
+                        <div class="modal__content">
+                                
+                                        <div class="flex_test-item">
+                                            選択ルームNo.<br>
+                                            <input type="text1" name="name1"></p><br>
+                                            
+                                            プレイルーム名<br>
+                                            <input type="text2" name="name2"></p><br>
+                                            パスワード<br>
+                                            (空ならパスワードなし)<br>
+                                            <input type="text3" name="name2"></p><br>
+                                            <input type="radio" name="kakutyo" value="male">間違いなく削除する<br><br>
+                                            <button type="button" name="name" value="value">削除</button>
+                                        
+                                    </div>
+                            <a class="js-modal-close" href="">閉じる</a>
+                        </div><!--modal__inner-->
+                    </div><!--modal-->
+              
         
-                <button type='submit' name='botton3' value='add'>新規プレイルーム作成</button><br>
-                <button type='submit' name='botton4' value='add'>指定プレイルーム削除</button><br><br>
+
 
             </div>
      
@@ -34,7 +137,7 @@
                     <div class="tab-content"></div>
                     <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">001-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -49,7 +152,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-02" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-02">100-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -64,7 +167,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-03" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-03">200-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -79,7 +182,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-04" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-04">300-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -94,7 +197,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-05" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-05">400-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -109,7 +212,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-06" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-06">500-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -124,7 +227,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-07" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-07">600-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -139,7 +242,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-08" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-08">700-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -154,7 +257,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-09" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-09">800-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                        <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");
@@ -169,7 +272,7 @@
                         </tr></tbody></table>   </div>
                     <input id="TAB-10" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-10">900-</label>
                     <div class="tab-content">   <table> <tbody> <tr>
-                            <th>No.</th>    <td>　　　ルーム名　　　</td>   <td>　　　ゲームシステム　　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
+                            <th>No.</th>    <td>　　　　　ルーム名　　　　　</td>   <td>　　ゲームシステム　　</td> <td>　　　パスワード　　　</td> <td>　　　入室人数　　　</td>   <td>　　見学　　</td>
                             <script>
                                 for(var i = 1 ; i <= 99 ; i++) {
                                     document.write("<tr>");

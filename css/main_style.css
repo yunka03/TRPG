@@ -208,3 +208,7 @@ body{
     background-color: #44546A;
     color: #fff;
   }
+  input.roomsearch{
+    width:100px;
+    height:5000px;
+  }

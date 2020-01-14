@@ -1,6 +1,11 @@
-
+body {
+	background-color:  #44546A;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #d9d9d9;
+	}
+	
 .flex_test-box {
-	background-color: rgb(255, 255, 255);     /* 背景色指定 */
+	background-color: #44546A;     /* 背景色指定 */
 	padding:  10px;             /* 余白指定 */
 	display: flex;     /*横並びにする*/
 }
@@ -14,6 +19,7 @@
 
 .flex_test-item:nth-child(1) {
 	background-color: rgb(163, 171, 185); /* 背景色指定 */
+	color: black;
 	text-align: center;
 	width: 400px;
 	height:630px;
@@ -21,6 +27,7 @@
 
 .flex_test-item:nth-child(2) {
 	background-color:  rgb(163, 171, 185); /* 背景色指定 */
+	color:black;
 	width: 1000px;
 	height:630px;
 	text-align: center;
@@ -60,6 +67,7 @@
 	color: rgb(9, 9, 9);
 	background: #d9d9d9;
 	border-right-color: White;
+	font-weight: bold;
   }
   .tab-switch:checked+.tab-label+.tab-content {
 	width: calc(100% - 1px); /* - ボタン幅 */
@@ -85,9 +93,17 @@
 	}
 
 	th,td {
-		border: solid 1px; 
-		color: rgb(115, 115, 115);
+		border: solid 1.5px; 
+		font-weight: bold;
+		color: #44546A;
+		background-color:  #d9d9d9;
 		             /* 枠線指定 */
+	}
+	tr{
+		border: solid 1.5px; 
+		color: #44546A;
+		background-color:  rgb(36, 57, 87);
+
 	}
 	 
 	table {
@@ -98,3 +114,221 @@
 		width:  60px;              /* 幅指定 */
 		height: 30px;               /* 高さ指定 */
 	}
+	::-webkit-scrollbar{	/*スクロールバー*/
+		width: 10px;
+	}
+	::-webkit-scrollbar-track{
+		background: rgb(163, 171, 185);
+		border: none;
+		border-radius: 10px;
+		box-shadow: inset 0 0 2px　rgb(163, 171, 185); 
+	}
+	::-webkit-scrollbar-thumb{
+		background: #d9d9d9;
+		border-radius: 10px;
+		box-shadow: none;
+	}
+.botton1{
+	border: 0px;
+	width:32px;
+	height:32px;
+	background: url(../images/Search.png) left top no-repeat;
+	vertical-align:middle;
+	outline:none;
+}
+.botton1:hover{
+	border: 0px;
+	opacity:0.6;
+	cursor: pointer;
+}
+.botton1:active{
+	border:0px;
+	position: relative;
+	top: 3px;
+	outline:0;
+}
+
+.botton2{
+	border:0px;
+	width:32px;
+	height:32px;
+	background: url(../images/rogin.png) left top no-repeat;
+	vertical-align:middle;
+	outline:none;
+}
+.botton2:hover{
+	animation: horizontal_9997 0.72s ease infinite;
+  transform-origin: 50% 50%;
+
+}
+@keyframes horizontal_9997 {
+  0% { transform:translate(0,0) }
+  16.66667% { transform:translate(2px,0) }
+  33.33333% { transform:translate(0,0) }
+  50% { transform:translate(2px,0) }
+  66.66667% { transform:translate(0,0) }
+  83.33333% { transform:translate(2px,0) }
+  100% { transform:translate(0,0) }
+}
+.botton2:active{
+	border:0px;
+	position: relative;
+	top: 3px;
+}
+.botton3{
+	width:200px;
+	height:32px;
+	border-radius: 25px;
+	background-color:  #44546A;
+	color: white;
+	border: outset;
+	outline:none;
+}
+.botton3:active{
+	border:0px;
+	position: relative;
+	top: 3px;
+}
+.botton3:hover{
+	border: 0px;
+	background-color:  rgb(85, 103, 129);
+	cursor: pointer;
+}
+.botton4{
+	width:200px;
+	height:32px;
+	border-radius: 25px;
+	background-color:  #44546A;
+	color: white;
+	border: outset;
+	outline:none;
+}
+.botton4:hover{
+	border: 0px;
+	background-color:  rgb(85, 103, 129);
+	cursor: pointer;
+}
+.botton4:active{
+	border:0px;
+	position: relative;
+	top: 3px;
+}
+
+.text1{
+	width:250px;
+	height:30px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+}
+.text2{
+	width:45px;
+	height:25px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+	
+}
+.text3{
+	width:100px;
+	height:25px;
+	border:none;
+  border-radius:10px;
+  box-shadow: none;
+	padding: 2px 8px;
+	background:  #e9e9e9;
+	outline:none;
+
+}
+/*ラジオボタン*/
+.cp_ipradio {
+	width: 50%;
+	margin: 1em auto;
+	text-align: auto;
+	border: 0px;
+}
+.cp_ipradio input {
+	display: none;
+}
+.cp_ipradio label {
+	position: relative;
+	display: block;
+	padding: 5px 0;
+	padding-right: 35px;
+	cursor: pointer;
+}
+.cp_ipradio input[type='radio'] {
+	position: absolute;
+	visibility: hidden !important;
+}
+.cp_ipradio input[type='radio'] + label:before,
+.cp_ipradio input[type='radio'] + label:after {
+	position: absolute;
+	top: 50%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-top: -7.5px;
+	content: '';
+}
+.cp_ipradio input[type='radio'] + label:before {
+	right: 0;
+	width: 30px;
+	height: 15px;
+	border: 1px solid  #d9d9d9;
+	border-radius: 15px;
+	background:  #e9e9e9;
+}
+.cp_ipradio input[type='radio'] + label:after {
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	-webkit-transition: all 200ms ease-out;
+	        transition: all 200ms ease-out;
+	border-radius: 50%;
+	background: #8593a3;
+}
+.cp_ipradio input[type='radio']:checked + label:after {
+	right: 0;
+	background: #44546A;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	
+}
+
+.content{
+    margin: 0 auto;
+	padding: 40px;
+	outline:none;
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+	width: 100%;
+	
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    background: #44546A;
+    left: 57.5%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	width: 60%;
+}
